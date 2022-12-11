@@ -1,0 +1,47 @@
+<!-- ¿Cuántos años de diferencia tienes con tu hermano? 
+    Escribe un programa que muestre el mensaje 
+    ¨Nuestra diferencia de edad es¨,
+     concatenando el resultado de la diferencia de tu edad con la de tu hermano 
+     (o de un amigo). 
+     La respuesta puede dar negativa, sin duda. 
+     No olvides de usar las funciones saltarLinea e imprimir y de incluir la etiqueta <meta> para resolver problemas de acentuación.
+     -->
+
+
+
+
+<script>
+    //Funcion para agregar utf y titulo en el programa
+    function html(){
+        document.write('<meta charset="UTF-8">')
+        document.write('<h2> DIFERENCIA DE EDADES </h2> ')
+    }
+
+
+    //Crear funcion para salto de linea 
+    function saltarlinea(){
+        document.write("<br> <br> ");
+    } 
+
+    //Funcion con parametros 
+    function diferenciaEdad(){ 
+        var miEdad = 21; 
+        var edadHermano = 29;
+
+        var miNombre = "Julio";
+        var suNombre = "Cesar";
+
+        var diferencia = miEdad - edadHermano
+
+        saltarlinea()
+        document.write("La diferncia de edad entre "+miNombre+ " Y " +suNombre+ " es de: "+diferencia );
+        
+    }
+
+    html() //Ejecutando la funcion de html 
+
+    diferenciaEdad() //ejecutando la funcion de diferencia de edad
+
+
+
+</script>

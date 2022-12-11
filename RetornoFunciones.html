@@ -1,0 +1,38 @@
+<!-- PROGRAMA PARA CALCULAR EL IMC 
+peso / altura2
+
+-->
+
+<script>
+    //Funcion para agregar utf y titulo en el programa
+    function html(){
+        document.write('<meta charset="UTF-8">')
+        //Titulo del programa o pagina 
+        document.write('<h2> Retorno de funciones </h2> ')
+    }
+
+    //funcion para imprimir mensaje
+    function imprimir(frase){
+        document.write(frase);
+        document.write("<br><br>");
+    }
+
+    //Crear funcion para salto de linea 
+    function saltarlinea(){
+        document.write("<br> <br> ");
+    } 
+
+    //Funcion con parametros 
+    function IMC(peso,altura){ 
+
+        return (peso / (altura* altura));
+
+    }
+
+    html() //Ejecutando la funcion de html 
+
+    imprimir("El promedio del imc de Julio y carlos es de: " + ( (IMC(61,1.76) + IMC(75,1.70) ) / 2) );
+
+    
+
+</script>

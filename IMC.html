@@ -1,0 +1,42 @@
+<!-- PROGRAMA PARA CALCULAR EL IMC 
+peso / altura2
+
+-->
+
+<script>
+    //Funcion para agregar utf y titulo en el programa
+    function html(){
+        document.write('<meta charset="UTF-8">')
+        //Titulo del programa o pagina 
+        document.write('<h2> CALCULADORA IMC </h2> ')
+    }
+
+    //funcion para imprimir mensaje
+    function imprimir(frase){
+        document.write(frase);
+        document.write("<br><br>");
+    }
+
+    //Crear funcion para salto de linea 
+    function saltarlinea(){
+        document.write("<br> <br> ");
+    } 
+
+    //Funcion con parametros 
+    function IMC(peso,altura,nombre){ 
+
+        imc = peso / (altura* altura);
+
+       imprimir("El indice de masa corporal de " +nombre+ " es de: "+imc);
+    }
+
+    html() //Ejecutando la funcion de html 
+
+
+    IMC(61,1.75,"Julio"); //ejecutando la funcion de diferencia de edad
+
+
+    IMC(75,1.70,"Carlos"); //ejecutando la funcion de diferencia de edad
+
+
+</script>
